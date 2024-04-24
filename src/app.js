@@ -1,11 +1,12 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronouns = ["the", "our"];
+let adjectives = ["great", "big"];
+let nouns = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let pronoun of pronouns) {
+  for (let adjective of adjectives) {
+    for (let noun of nouns) {
+      let domain = pronoun + adjective + noun + ".com";
+      console.log(domain);
+    }
+  }
+}
